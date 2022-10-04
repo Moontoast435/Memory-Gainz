@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: rgb(85, 85, 85);
+}
+
+.menu-wrapper {
+    height: 21rem;
+    width: 11rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 8px;
+    position: absolute;
+    top: 12rem;
+    left: 7rem;
+}
+
+.menu {
+    top: 10rem;
+    left: 8rem;
+    height: 20rem;
+    width: 10rem;
+    padding: 2rem;
+    background: #222;
+    margin: 0;
+}
+
+.menu-buttons {
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
+    border-radius: 42px;
+    border-width: 0;
+    box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    font-family: Quicksand,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    justify-content: center;
+    letter-spacing: .04em;
+    line-height: 16px;
+    padding: 8px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    
+}
+
+
+.menu-buttons:hover {
+  background-image: linear-gradient(#B384C9, #391F5B 50%);
+}
+
+.title {
+    background-color: initial;
+    background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
+
+    border-radius: 5px;
+    margin: 2rem 5rem;
+    text-align: center;
+    padding: 20px;
+    font-family: Quicksand, sans-serif;
+    color: #FFFFFF
+}
