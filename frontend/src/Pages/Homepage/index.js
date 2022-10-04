@@ -14,8 +14,9 @@ let navigate = useNavigate();
                 <button className="menu-buttons">How to play</button>
                 <button className="menu-buttons">Options</button>
                 <button className="menu-buttons">Leaderboard</button>
+                </div>
             </div>
-            </div>
+            <footer>Background image sourced from unsplash</footer>
         </div>
     );
 }
