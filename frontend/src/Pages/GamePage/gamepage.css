@@ -1,3 +1,37 @@
-.gun {
-    margin: 20rem;
+.game-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.sequence-board {
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    height: 15rem;
+    width: 20rem;
+    border-width: 0;
+    border-radius: 40px;
+    box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+    background-color: rgba(6, 5, 83, 0.628);
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    column-gap: 15px;
+    row-gap: 2px;
+    margin: -2px;
+}
+.square {
+    height: 20px;
+    width: 50px;
+    border: solid 2px;
+    opacity: 1;
+    margin: 12px;
+    background-color:aliceblue;
+    
+    
 }
