@@ -1,10 +1,10 @@
 import { SEQUENCE1 } from "../actions/actionTypes";
 
 const initialState = {
-    sequence1: null
+    sequence1: []
   };
 
-export default function(state = initialState, action) {
+const Sequencer = (state = initialState, action) => {
     const { type, payload } = action;
     switch(type) {
         case SEQUENCE1:
@@ -18,3 +18,5 @@ export default function(state = initialState, action) {
     }
 
   };
+
+export default Sequencer
