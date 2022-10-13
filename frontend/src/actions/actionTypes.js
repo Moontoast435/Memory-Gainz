@@ -1,1 +1,2 @@
-export const SEQUENCE1 = "SEQUENCE1"
+export const SEQUENCE1 = "SEQUENCE1";
+export const SEQUENCE_FINISHED = "SEQUENCE_FINISHED";

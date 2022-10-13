@@ -1,7 +1,8 @@
-import { SEQUENCE1 } from "../actions/actionTypes";
+import { SEQUENCE1, SEQUENCE_FINISHED } from "../actions/actionTypes";
 
 const initialState = {
-    sequence1: []
+    sequence1: [],
+    isSequenceFinished: false
   };
 
 const Sequencer = (state = initialState, action) => {
@@ -11,6 +12,11 @@ const Sequencer = (state = initialState, action) => {
             return {
                 ...state,
                 sequence1: payload
+            }
+        case SEQUENCE_FINISHED:
+            return {
+              ...state,
+              isSequenceFinished: true
             }  
         default:
             return state
