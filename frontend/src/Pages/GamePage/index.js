@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './gamepage.css';
 import GameBoard from '../../components/gameBoard';
 import Interactive from '../../components/interactiveBoard';
+import Result from '../../components/resultCard';
 import { updateSequence } from '../../actions/sequence';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -13,24 +14,23 @@ const dispatch = useDispatch();
 const navigate = useNavigate();
 
 
-const createSequenceArray = () => {
-    const numberOfFlashes = 5;
-    let sequenceArray = [];
-
-    for (let i = 0; i < numberOfFlashes; i++) {
-        let coordinates = {
-            row : 0,
-            column: 0
-        };
-        coordinates.row = Math.floor(Math.random() * 5 + 1);
-        coordinates.column = Math.floor(Math.random() * 5 + 1);
-        sequenceArray.push(coordinates);
-    }
-    setSequence( sequenceArray );
-  
-  }
-
 useEffect(() => {
+    const createSequenceArray = () => {
+        const numberOfFlashes = 5;
+        let sequenceArray = [];
+    
+        for (let i = 0; i < numberOfFlashes; i++) {
+            let coordinates = {
+                row : 0,
+                column: 0
+            };
+            coordinates.row = Math.floor(Math.random() * 5 + 1);
+            coordinates.column = Math.floor(Math.random() * 5 + 1);
+            sequenceArray.push(coordinates);
+        }
+        setSequence( sequenceArray );
+      
+      }
     createSequenceArray();
     // handleClick();
   }, [])
@@ -38,7 +38,7 @@ useEffect(() => {
   
 useEffect(() => {
     dispatch(updateSequence(sequence))
-}, [sequence])
+}, [sequence]) // eslint-disable-line react-hooks/exhaustive-deps
 
 
 
@@ -53,7 +53,9 @@ useEffect(() => {
             ? <Interactive /> 
             : <GameBoard />
             }
-            
+            {sequencerRedux.playerWin
+            && <Result />
+            }
         </div>
         
         
