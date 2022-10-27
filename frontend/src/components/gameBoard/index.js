@@ -9,6 +9,8 @@ const dispatch = useDispatch();
 
 const initSequence = async () => {
     // let testCoordinates = {row: 2, column : 1};
+    let startGame = document.getElementsByClassName('start-game');
+    startGame[0].style.display = 'none';
     let squares = document.getElementsByClassName('square');
     const timer = ms => new Promise(res => setTimeout(res, ms))
     for (let i = 0; i < gameSequence.sequence1.length ; i++) {
@@ -66,7 +68,7 @@ const initSequence = async () => {
             <div className="square 5-5"></div>
         </div>
     </div>
-    <button onClick={initSequence}>Start Game</button>
+    <button className="start-game" onClick={initSequence}>Start Game</button>
     </>
   )
 }

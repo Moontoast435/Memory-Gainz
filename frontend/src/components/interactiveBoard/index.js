@@ -14,13 +14,20 @@ const handleClick = (e) => {
     let row = parseInt(e.target.className.substr(7,1));
     let column = parseInt(e.target.className.substr(9,1));
     if (row === gameSequence.sequence1[numberOfClicks].row && column === gameSequence.sequence1[numberOfClicks].column) {
-        console.log('It matches');
+        e.target.style.backgroundColor = 'green';
+        setTimeout(() => {
+            e.target.style.backgroundColor = 'white';
+        }, 1000);
+        
         setClicks((prevState) => 
             prevState + 1);
         setCorrect((prevState) =>
             prevState + 1);
     } else {
-       
+        e.target.style.backgroundColor = 'red';
+        setTimeout(() => {
+            e.target.style.backgroundColor = 'white';
+        }, 1000);
         setClicks((prevState) => 
             prevState + 1);
     }
