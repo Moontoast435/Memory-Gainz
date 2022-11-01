@@ -15,7 +15,7 @@ const navigate = useNavigate();
 
 
 useEffect(() => {
-    const createSequenceArray = () => {
+     const createSequenceArray = () => {
         const numberOfFlashes = 5;
         let sequenceArray = [];
     
@@ -32,7 +32,7 @@ useEffect(() => {
       
       }
     createSequenceArray();
-    // handleClick();
+
   }, [])
   
   
@@ -47,15 +47,15 @@ useEffect(() => {
             <div>
                     Game page
                 <button onClick={() => navigate(-1)}>Go back</button>
-                <button>Play!</button>
+                
             </div>
             {sequencerRedux.isSequenceFinished
             ? <Interactive /> 
             : <GameBoard />
             }
-            {sequencerRedux.playerWin
-            && <Result />
-            }
+            
+            <Result  />
+            
         </div>
         
         

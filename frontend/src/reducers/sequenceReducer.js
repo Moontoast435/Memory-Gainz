@@ -1,4 +1,4 @@
-import { GAME_WON, GAME_LOST, SEQUENCE1, SEQUENCE_FINISHED } from "../actions/actionTypes";
+import { GAME_WON, GAME_LOST, SEQUENCE1, SEQUENCE_FINISHED, RESET } from "../actions/actionTypes";
 
 const initialState = {
     sequence1: [],
@@ -29,6 +29,13 @@ const Sequencer = (state = initialState, action) => {
             return {
               ...state,
               playerLose: true
+            }
+        case RESET:
+            return {
+              sequence1: [],
+              isSequenceFinished: false,
+              playerWin: false,
+              playerLose: false
             }
           
         default:

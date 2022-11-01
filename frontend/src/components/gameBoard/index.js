@@ -8,7 +8,6 @@ const dispatch = useDispatch();
 
 
 const initSequence = async () => {
-    // let testCoordinates = {row: 2, column : 1};
     let startGame = document.getElementsByClassName('start-game');
     startGame[0].style.display = 'none';
     let squares = document.getElementsByClassName('square');

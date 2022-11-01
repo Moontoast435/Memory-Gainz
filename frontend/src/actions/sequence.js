@@ -1,4 +1,4 @@
-import {SEQUENCE1, SEQUENCE_FINISHED, GAME_WON, GAME_LOST} from './actionTypes';
+import {SEQUENCE1, SEQUENCE_FINISHED, GAME_WON, GAME_LOST, RESET} from './actionTypes';
 
 
 export const updateSequence = (data) => {
@@ -24,5 +24,11 @@ export const winGame = () => {
 export const loseGame = () => {
     return {
         type: GAME_LOST
+    }
+}
+
+export const resetGame = () => {
+    return {
+        type: RESET
     }
 }

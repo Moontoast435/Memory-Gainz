@@ -34,7 +34,6 @@ const handleClick = (e) => {
 }
 
 useEffect(() => {
-    console.log('clicked');
     if (numberOfClicks === 5 && correct === 5) {
         dispatch(winGame());
         setClicks(0)
