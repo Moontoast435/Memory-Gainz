@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { resetGame, updateSequence } from '../../actions/sequence';
 
 export default function Result() {
   const dispatch = useDispatch();
   const gameSequence = useSelector((state) => state.Sequencer);
-  const [sequence, setSequence] = useState([]);
 
   const playAgain = () => {
     dispatch(resetGame());
 
     createSequenceArray();
    
-    dispatch(updateSequence(sequence));
+  
     
   }
   const createSequenceArray = () => {
@@ -28,7 +27,7 @@ export default function Result() {
         coordinates.column = Math.floor(Math.random() * 5 + 1);
         sequenceArray.push(coordinates);
     }
-    setSequence( sequenceArray );
+    dispatch(updateSequence(sequenceArray));
     
   }
 

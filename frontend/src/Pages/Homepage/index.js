@@ -11,7 +11,7 @@ let navigate = useNavigate();
             <div className="menu-wrapper">
                 <div className="menu" data-testid="menu-div">
                 <button aria-label="play-game-button" className="menu-buttons" onClick={() => navigate('./game')}>Play Game</button>
-                <button aria-label="how-to-play-button" className="menu-buttons">How to play</button>
+                <button aria-label="how-to-play-button" className="menu-buttons" onClick={() => navigate('./howtoplay')}>How to play</button>
                 <button aria-label="options-button" className="menu-buttons">Options</button>
                 <button aria-label="leaderboard-button" className="menu-buttons">Leaderboard</button>
                 </div>
