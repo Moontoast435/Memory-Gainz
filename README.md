@@ -2,6 +2,9 @@
 
 A small solo project which aims to improve memory.
 
+Deployment link: 
+https://memory-gainz.netlify.app/game
+
 ## Installation && Usage
 
 Clone the repo, then cd into the frontend folder from the bash terminal. Then type npm start into the terminal to run the app.
