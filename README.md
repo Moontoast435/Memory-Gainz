@@ -3,7 +3,7 @@
 A small solo project which aims to improve memory.
 
 Deployment link: 
-https://memory-gainz.netlify.app/game
+https://memory-gainz.netlify.app
 
 ## Installation && Usage
 
