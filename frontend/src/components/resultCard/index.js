@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { resetGame, updateSequence } from '../../actions/sequence';
+import './resultCard.css';
 
 export default function Result() {
   const dispatch = useDispatch();
@@ -36,7 +37,7 @@ export default function Result() {
       <div>
         {gameSequence.playerWin &&
         <div>
-        <p> Congrats! You win!</p>
+        <p className="you-win"> Congrats! You win!</p>
         <button onClick={playAgain}>Play Again?</button>
         </div>
         }
@@ -44,7 +45,7 @@ export default function Result() {
         <div>
         {gameSequence.playerLose &&
         <div>
-        <p> Bad luck! You lost. </p>
+        <p className="you-lose"> Bad luck! You lost. </p>
         <button onClick={playAgain}>Play Again?</button>
         </div>
         }

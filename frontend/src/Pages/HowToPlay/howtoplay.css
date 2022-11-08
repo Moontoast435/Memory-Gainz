@@ -1,0 +1,19 @@
+.info-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.how-to-play-info {
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    align-self: center;
+    font-size: 24px;
+    
+}
+
+.go-back-button {
+    height: 2rem;
+}

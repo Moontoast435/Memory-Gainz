@@ -1,0 +1,49 @@
+:root {
+    --fadeIn: fadeIn 3s;
+}
+
+.you-win {
+    font-size: 60px;
+    margin-top: 5rem;
+    animation: var(--fadeIn);
+    -webkit-animation: var(--fadeIn);
+    -moz-animation: var(--fadeIn);
+    -o-animation: var(--fadeIn);
+    -ms-animation: var(--fadeIn);
+
+}
+
+.you-lose {
+    font-size: 40px;
+    margin-top: 5rem;
+    animation: var(--fadeIn);
+    -webkit-animation: var(--fadeIn);
+    -moz-animation: var(--fadeIn);
+    -o-animation: var(--fadeIn);
+    -ms-animation: var(--fadeIn);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
