@@ -80,7 +80,7 @@ useEffect(() => {
         <button onClick={handleClick} className="square 5-4"></button>
         <button onClick={handleClick} className="square 5-5"></button>
     </div>
-    <p> im the interactive board</p>
+    <p style={{color: "magenta"}} classname="game-prompt"> Press the buttons in accordance with the sequence now</p>
 </div>
   )
 }

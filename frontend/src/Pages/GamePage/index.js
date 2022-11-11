@@ -43,12 +43,16 @@ useEffect(() => {
 
 
     return (
-        <div className="game-container">
-            <div>
-                    Game page
-                <button onClick={() => navigate(-1)}>Go back</button>
+        <div>
+            <button className="go-back-button" onClick={() => navigate(-1)}>Go back</button>
+            <div className="game-page-header">
                 
+                <h1 className="game-page-title">
+                        Game page
+                </h1>
             </div>
+        <div className="game-page">
+        <div className="game-container">
             {sequencerRedux.isSequenceFinished
             ? <Interactive /> 
             : <GameBoard />
@@ -57,8 +61,8 @@ useEffect(() => {
             <Result  />
             
         </div>
-        
-        
+        </div>
+        </div>
 
     );
 }
